@@ -6,21 +6,6 @@ const order1Donuts = order1Element.getAttribute("data-donuts");
 const order1Pancakes = order1Element.getAttribute("data-pancakes");
 const order1Status = order1Element.getAttribute("data-delivered");
 
-// order 2, get attributes
-const order2DlElement = document.querySelector("[data-key = order2]");
-const order2Biscuits = order2DlElement.getAttribute("data-biscuits");
-const order2Donuts = order2DlElement.getAttribute("data-donuts");
-const order2Pancakes = order2DlElement.getAttribute("data-pancakes");
-const order2Status = order2DlElement.getAttribute("data-delivered");
-
-// Order 3, get attributes
-const order3Element = document.querySelector("[data-key='order3']");
-const order3Biscuits = order3Element.getAttribute("data-biscuits");
-const order3Donuts = order3Element.getAttribute("data-donuts");
-const order3Pancakes = order3Element.getAttribute("data-pancakes");
-const order3Status = order3Element.getAttribute("data-delivered");
-//===========
-
 //Order 1 replace Loading with values from data attributes
 order1Element.querySelector(".biscuits .count").textContent = order1Biscuits;
 order1Element.querySelector(".donuts .count").textContent = order1Donuts;
@@ -29,6 +14,12 @@ order1Element.querySelector(".status > dd").textContent = order1Status
   ? "Delivered"
   : "Pending";
 
+// order 2, get attributes
+const order2DlElement = document.querySelector("[data-key = order2]");
+const order2Biscuits = order2DlElement.getAttribute("data-biscuits");
+const order2Donuts = order2DlElement.getAttribute("data-donuts");
+const order2Pancakes = order2DlElement.getAttribute("data-pancakes");
+const order2Status = order2DlElement.getAttribute("data-delivered");
 //order 2 replace loading..... with values
 order2DlElement.querySelector(".biscuits .count").textContent = order2Biscuits;
 order2DlElement.querySelector(".donuts .count").textContent = order2Donuts;
@@ -37,6 +28,13 @@ order2DlElement.querySelector(".status > dd").textContent = order2Status
   ? "Delivered"
   : "Pending";
 
+// Order 3, get attributes
+const order3Element = document.querySelector("[data-key='order3']");
+const order3Biscuits = order3Element.getAttribute("data-biscuits");
+const order3Donuts = order3Element.getAttribute("data-donuts");
+const order3Pancakes = order3Element.getAttribute("data-pancakes");
+const order3Status = order3Element.getAttribute("data-delivered");
+
 // Order 3 replace Loading..... with values
 order3Element.querySelector(".biscuits .count").textContent = order3Biscuits;
 order3Element.querySelector(".donuts .count").textContent = order3Donuts;
@@ -44,6 +42,8 @@ order3Element.querySelector(".pancakes .count").textContent = order3Pancakes;
 order3Element.querySelector(".status > dd").textContent = order3Status
   ? "Delivered"
   : "Pending";
+//===========
+
 // 2-biscuits= 2-root.biscuits,
 // 2-donuts = 2-root.donuts,
 // 2-pancakes = 2-root.pancakes,
